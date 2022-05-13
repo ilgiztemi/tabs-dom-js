@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 100px auto;
+    height: 100%;
+}
+.container .top {
+    text-align: center;
+}
+.container .top h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.container .top p {
+    margin-bottom: 60px;
+}
+.container .img {
+    height: 450px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+    background-position: center;
+    width: 100%;
+}
+.container .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.container .main-content {
+    height: 450px;
+    background-color: rgb(237, 237, 244);
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+}
+.container .navbar {
+    cursor: pointer;
+    height: 70px;
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(203, 203, 215);
+}
+.history:hover {
+    background-color: lightblue;
+    color: rgb(63, 63, 239);
+    padding: 20px;
+}
+.vision:hover {
+    background-color: lightblue;
+    color: rgb(63, 63, 239);
+    padding: 20px;
+}
+.goals:hover {
+    background-color: lightblue;
+    color: rgb(63, 63, 239);
+    padding: 20px;
+}
+.navbar .history {
+    text-align: center;
+    align-self: center;
+    flex-basis: 33.3%;
+    background-color: rgb(237, 237, 244);
+    padding: 20px;
+}
+.navbar .vision {
+    text-align: center;
+    flex-basis: 33.3%;
+    align-self: center;
+    padding: 20px;
+}
+.navbar .goals {
+    flex-basis: 33.3%;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+}
+.navbar-text {
+    padding: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    width: 95%;
+    margin: 10px auto;
+    overflow-y: hidden;
+}
+.navbar-text .text-title {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 1040px) {
+    .main {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .img {
+        height: 400px;
+    }
+    .main-content {
+        height: 400px;
+    }
+}
